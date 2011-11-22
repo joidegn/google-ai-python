@@ -1,0 +1,207 @@
+# turn 1
+o 29 134 n
+o 60 107 e
+o 15 128 e
+o 102 85 w
+o 31 119 n
+o 68 2 s
+o 72 79 w
+# turn 2
+o 72 78 w
+o 30 119 e
+o 15 129 s
+o 102 84 n
+o 60 108 e
+o 69 2 n
+o 28 134 e
+# turn 3
+o 29 134 e
+o 72 77 w
+o 16 129 e
+o 101 84 w
+o 31 119 n
+o 60 109 e
+o 68 2 n
+o 30 120 e
+# turn 4
+o 67 2 n
+o 72 76 w
+o 30 119 n
+o 16 130 e
+o 101 83 n
+o 60 110 e
+o 30 121 n
+# turn 5
+o 100 83 e
+o 16 131 s
+o 60 111 e
+o 29 119 n
+o 66 2 e
+o 29 121 e
+o 72 75 n
+# turn 6
+o 60 112 e
+o 28 119 e
+o 102 85 n
+o 17 131 e
+o 66 3 n
+o 71 75 n
+o 100 84 n
+o 29 122 n
+# turn 7
+o 60 113 s
+o 70 75 w
+o 99 84 e
+o 65 3 e
+o 101 85 n
+o 28 122 n
+o 17 132 n
+o 28 120 e
+# turn 8
+o 61 113 e
+o 27 122 e
+o 60 107 e
+o 16 132 e
+o 70 74 w
+o 65 4 e
+o 99 85 e
+o 100 85 e
+o 28 121 e
+# turn 9
+o 70 73 e
+o 16 133 s
+o 27 123 e
+o 61 114 e
+o 65 5 w
+o 100 86 e
+o 99 86 e
+o 28 122 n
+o 60 108 n
+# turn 10
+o 27 122 e
+o 61 115 n
+o 99 87 e
+o 70 74 e
+o 59 108 n
+o 65 4 n
+o 100 87 s
+o 72 79 n
+# turn 11
+o 99 88 s
+o 17 133 n
+o 70 75 e
+o 64 4 w
+o 101 87 e
+o 58 108 s
+o 60 115 n
+o 71 79 s
+# turn 12
+o 59 108 w
+o 59 115 n
+o 101 88 e
+o 100 88 e
+o 70 76 e
+o 64 3 w
+o 72 79 s
+# turn 13
+o 73 79 e
+o 58 115 e
+o 101 89 e
+o 59 107 s
+o 70 77 s
+o 100 89 e
+o 64 2 w
+# turn 14
+o 64 1 w
+o 60 107 w
+o 71 77 e
+o 100 90 e
+o 101 90 e
+o 58 116 e
+# turn 15
+o 58 117 e
+o 71 78 e
+o 100 91 e
+o 64 0 w
+o 101 91 e
+# turn 16
+o 64 143 w
+o 60 106 e
+o 58 118 n
+o 71 79 s
+# turn 17
+o 16 133 s
+o 60 107 e
+o 57 118 e
+o 64 142 w
+o 72 79 s
+# turn 18
+o 17 133 n
+o 73 79 s
+o 64 141 w
+o 60 108 n
+o 57 119 e
+# turn 19
+o 57 120 e
+o 59 108 n
+o 64 140 w
+o 74 79 s
+# turn 20
+o 57 121 n
+o 58 108 e
+o 64 139 w
+o 75 79 s
+# turn 21
+o 76 79 e
+o 58 109 e
+o 56 121 n
+o 64 138 w
+# turn 22
+o 58 110 e
+o 76 80 s
+o 64 137 w
+o 55 121 n
+# turn 23
+o 58 111 n
+o 77 80 s
+# turn 24
+o 78 80 s
+# turn 25
+o 79 80 s
+# turn 26
+# turn 27
+# turn 28
+o 29 135 e
+o 28 135 e
+# turn 29
+o 16 133 s
+# turn 30
+o 29 136 n
+# turn 31
+o 28 136 e
+# turn 32
+o 17 133 n
+o 27 123 s
+o 28 137 e
+o 27 124 s
+# turn 33
+o 28 138 e
+o 28 124 s
+o 28 123 s
+# turn 34
+o 29 124 s
+o 16 133 s
+o 28 139 s
+o 29 123 s
+# turn 35
+o 17 133 s
+o 29 139 s
+# turn 36
+o 18 133 s
+o 30 139 w
+# turn 37
+o 19 133 s
+o 30 138 w
+# turn 38
+o 30 137 w
+o 20 133 s

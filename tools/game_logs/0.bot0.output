@@ -1,0 +1,349 @@
+# turn 1
+o 36 16 n
+o 42 130 n
+o 64 28 n
+o 76 57 e
+o 85 73 s
+o 91 59 n
+o 103 20 n
+hello # unknown action
+# turn 2
+o 35 16 n
+o 41 130 e
+o 63 28 s
+o 76 58 e
+o 86 73 n
+o 90 59 n
+o 102 20 n
+hello # unknown action
+# turn 3
+o 34 16 n
+o 41 131 n
+o 42 130 n
+o 64 28 n
+o 76 59 n
+o 85 73 s
+o 89 59 n
+o 101 20 n
+hello # unknown action
+# turn 4
+o 33 16 n
+o 40 131 n
+o 41 130 e
+o 63 28 s
+o 75 59 s
+o 86 73 n
+o 88 59 e
+o 100 20 n
+hello # unknown action
+# turn 5
+o 32 16 n
+o 39 131 e
+o 41 131 n
+o 64 28 n
+o 76 59 n
+o 85 73 s
+o 88 60 n
+o 99 20 e
+hello # unknown action
+# turn 6
+o 31 16 e
+o 36 16 n
+o 39 132 s
+o 40 131 n
+o 63 28 s
+o 75 59 s
+o 86 73 n
+o 87 60 s
+o 99 21 n
+hello # unknown action
+# turn 7
+o 31 17 e
+o 35 16 n
+o 39 131 e
+o 40 132 n
+o 64 28 n
+o 76 59 n
+o 85 73 s
+o 88 60 n
+o 98 21 n
+hello # unknown action
+# turn 8
+o 31 18 n
+o 34 16 n
+o 63 28 s
+o 75 59 s
+o 86 73 n
+o 87 60 s
+o 97 21 n
+hello # unknown action
+# turn 9
+o 30 18 n
+o 33 16 n
+o 64 28 n
+o 76 59 n
+o 85 73 s
+o 88 60 n
+o 96 21 n
+hello # unknown action
+# turn 10
+o 29 18 n
+o 32 16 n
+o 63 28 s
+o 75 59 s
+o 86 73 n
+o 87 60 s
+o 95 21 n
+hello # unknown action
+# turn 11
+o 28 18 n
+o 31 16 e
+o 64 28 n
+o 76 59 n
+o 85 73 s
+o 88 60 n
+o 94 21 e
+hello # unknown action
+# turn 12
+o 27 18 e
+o 31 17 e
+o 63 28 s
+o 75 59 s
+o 86 73 n
+o 87 60 s
+o 94 22 n
+hello # unknown action
+# turn 13
+o 27 19 n
+o 31 18 n
+o 64 28 n
+o 76 59 n
+o 85 73 s
+o 88 60 n
+o 93 22 s
+hello # unknown action
+# turn 14
+o 26 19 s
+o 30 18 n
+o 63 28 s
+o 75 59 s
+o 86 73 n
+o 87 60 s
+o 94 22 n
+hello # unknown action
+# turn 15
+o 27 19 n
+o 29 18 n
+o 64 28 n
+o 76 59 n
+o 85 73 s
+o 88 60 n
+o 93 22 s
+hello # unknown action
+# turn 16
+o 26 19 s
+o 28 18 n
+o 63 28 s
+o 75 59 s
+o 86 73 n
+o 87 60 s
+o 94 22 n
+hello # unknown action
+# turn 17
+o 27 18 e
+o 27 19 n
+o 64 28 n
+o 76 59 n
+o 85 73 s
+o 88 60 n
+o 93 22 s
+hello # unknown action
+# turn 18
+o 26 19 s
+o 27 19 n
+o 63 28 s
+o 75 59 s
+o 86 73 n
+o 87 60 s
+o 94 22 n
+hello # unknown action
+# turn 19
+o 26 19 s
+o 27 19 n
+o 64 28 n
+o 76 59 n
+o 85 73 s
+o 88 60 n
+o 93 22 s
+hello # unknown action
+# turn 20
+o 26 19 s
+o 27 19 n
+o 63 28 s
+o 75 59 s
+o 86 73 n
+o 87 60 s
+o 94 22 n
+hello # unknown action
+# turn 21
+o 26 19 s
+o 27 19 n
+o 64 28 n
+o 76 59 n
+o 85 73 s
+o 88 60 n
+o 93 22 s
+hello # unknown action
+# turn 22
+o 26 19 s
+o 27 19 n
+o 63 28 s
+o 75 59 s
+o 86 73 n
+o 87 60 s
+o 94 22 n
+hello # unknown action
+# turn 23
+o 26 19 s
+o 27 19 n
+o 64 28 n
+o 76 59 n
+o 85 73 s
+o 88 60 n
+o 93 22 s
+hello # unknown action
+# turn 24
+o 26 19 s
+o 27 19 n
+o 63 28 s
+o 75 59 s
+o 86 73 n
+o 87 60 s
+o 94 22 n
+hello # unknown action
+# turn 25
+o 26 19 s
+o 27 19 n
+o 64 28 n
+o 76 59 n
+o 85 73 s
+o 88 60 n
+o 93 22 s
+hello # unknown action
+# turn 26
+o 26 19 s
+o 27 19 n
+o 63 28 s
+o 75 59 s
+o 86 73 n
+o 87 60 s
+o 94 22 n
+hello # unknown action
+# turn 27
+o 26 19 s
+o 27 19 n
+o 64 28 n
+o 76 59 n
+o 85 73 s
+o 88 60 n
+o 93 22 s
+hello # unknown action
+# turn 28
+o 26 19 s
+o 27 19 n
+o 63 28 s
+o 75 59 s
+o 86 73 n
+o 87 60 s
+o 94 22 n
+hello # unknown action
+# turn 29
+o 26 19 s
+o 27 19 n
+o 64 28 n
+o 76 59 n
+o 85 73 s
+o 88 60 n
+o 93 22 s
+hello # unknown action
+# turn 30
+o 26 19 s
+o 27 19 n
+o 63 28 s
+o 75 59 s
+o 86 73 n
+o 87 60 s
+o 94 22 n
+hello # unknown action
+# turn 31
+o 26 19 s
+o 27 19 n
+o 64 28 n
+o 76 59 n
+o 85 73 s
+o 88 60 n
+o 93 22 s
+hello # unknown action
+# turn 32
+o 26 19 s
+o 27 19 n
+o 63 28 s
+o 75 59 s
+o 86 73 n
+o 87 60 s
+o 94 22 n
+hello # unknown action
+# turn 33
+o 26 19 s
+o 27 19 n
+o 64 28 n
+o 76 59 n
+o 85 73 s
+o 88 60 n
+o 93 22 s
+hello # unknown action
+# turn 34
+o 26 19 s
+o 27 19 n
+o 63 28 s
+o 75 59 s
+o 86 73 n
+o 87 60 s
+o 94 22 n
+hello # unknown action
+# turn 35
+o 26 19 s
+o 27 19 n
+o 64 28 n
+o 76 59 n
+o 85 73 s
+o 88 60 n
+o 93 22 s
+hello # unknown action
+# turn 36
+o 26 19 s
+o 27 19 n
+o 63 28 s
+o 75 59 s
+o 86 73 n
+o 87 60 s
+o 94 22 n
+hello # unknown action
+# turn 37
+o 26 19 s
+o 27 19 n
+o 64 28 n
+o 76 59 n
+o 85 73 s
+o 88 60 n
+o 93 22 s
+hello # unknown action
+# turn 38
+o 26 19 s
+o 27 19 n
+o 63 28 s
+o 75 59 s
+o 86 73 n
+o 87 60 s
+o 94 22 n
+hello # unknown action
