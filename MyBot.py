@@ -26,7 +26,8 @@ class MyBot:
     # the ants class is created and setup by the Ants.run method
     logging.info('initialized...\n\n')  
       # initialize data structures after learning the game settings
-    self.ants = ants  
+    self.ants = ants 
+    self.mode_registry = {} # every ant should register the field it is moving and maybe the goal that it wants to reach
     # do turn is run once per turn
     # the ants class has the game state and is updated by the Ants.run method
     # it also has several helper methods to use
@@ -47,7 +48,7 @@ class MyBot:
         distance = self.ants.distance(ant_loc, goal_loc)
         logging.debug('distance is %s' % (repr(distance)))
 
-        if distance < 15: # else we will timeout
+        if distance < 15: # else we will timeout and somebody else will probably find the food before us
           path = self.findpath(ant_loc, goal_loc)
         else:
           path = [(ant_loc[0]+1, ant_loc[1])]
