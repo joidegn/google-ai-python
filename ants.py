@@ -177,8 +177,9 @@ class Ants():
       neighbors = []
       for row in (-1,0,1):
         for column in (-1,0,1):
-          if self.passable(tuple(loc[0]+row, loc[1]+column)):
-            neighbors.append(tuple(loc[0]+row, loc[1]+column))
+          if not (row+column) % 2 == 0:
+            if self.passable((loc[0]+row, loc[1]+column)):
+              neighbors.append((loc[0]+row, loc[1]+column))
       return neighbors
 
     def unoccupied(self, loc):
@@ -199,6 +200,11 @@ class Ants():
         d_col = min(abs(col1 - col2), self.cols - abs(col1 - col2))
         d_row = min(abs(row1 - row2), self.rows - abs(row1 - row2))
         return d_row + d_col
+    def straight_line_distance(self, loc1, loc2):
+        row1, col1 = loc1
+        row2, col2 = loc2
+        return sqrt(abs(row1-row2)**2+abs(col1-col2)**2)
+
 
     def direction(self, loc1, loc2):
         'determine the 1 or 2 fastest (closest) directions to reach a location'

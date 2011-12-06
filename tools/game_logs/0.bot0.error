@@ -1,76 +1,81 @@
-turn    1 bot 0 invalid actions:
-hello # unknown action
-turn    2 bot 0 invalid actions:
-hello # unknown action
-turn    3 bot 0 invalid actions:
-hello # unknown action
-turn    4 bot 0 invalid actions:
-hello # unknown action
-turn    5 bot 0 invalid actions:
-hello # unknown action
-turn    6 bot 0 invalid actions:
-hello # unknown action
-turn    7 bot 0 invalid actions:
-hello # unknown action
-turn    8 bot 0 invalid actions:
-hello # unknown action
-turn    9 bot 0 invalid actions:
-hello # unknown action
-turn   10 bot 0 invalid actions:
-hello # unknown action
-turn   11 bot 0 invalid actions:
-hello # unknown action
-turn   12 bot 0 invalid actions:
-hello # unknown action
-turn   13 bot 0 invalid actions:
-hello # unknown action
-turn   14 bot 0 invalid actions:
-hello # unknown action
-turn   15 bot 0 invalid actions:
-hello # unknown action
-turn   16 bot 0 invalid actions:
-hello # unknown action
-turn   17 bot 0 invalid actions:
-hello # unknown action
-turn   18 bot 0 invalid actions:
-hello # unknown action
-turn   19 bot 0 invalid actions:
-hello # unknown action
-turn   20 bot 0 invalid actions:
-hello # unknown action
-turn   21 bot 0 invalid actions:
-hello # unknown action
-turn   22 bot 0 invalid actions:
-hello # unknown action
-turn   23 bot 0 invalid actions:
-hello # unknown action
-turn   24 bot 0 invalid actions:
-hello # unknown action
-turn   25 bot 0 invalid actions:
-hello # unknown action
-turn   26 bot 0 invalid actions:
-hello # unknown action
-turn   27 bot 0 invalid actions:
-hello # unknown action
-turn   28 bot 0 invalid actions:
-hello # unknown action
-turn   29 bot 0 invalid actions:
-hello # unknown action
-turn   30 bot 0 invalid actions:
-hello # unknown action
-turn   31 bot 0 invalid actions:
-hello # unknown action
-turn   32 bot 0 invalid actions:
-hello # unknown action
-turn   33 bot 0 invalid actions:
-hello # unknown action
-turn   34 bot 0 invalid actions:
-hello # unknown action
-turn   35 bot 0 invalid actions:
-hello # unknown action
-turn   36 bot 0 invalid actions:
-hello # unknown action
-turn   37 bot 0 invalid actions:
-hello # unknown action
-turn   38 bot 0 invalid actions:
-hello # unknown action
+WARNING:root:started findpath
+WARNING:root:started finding (93, 52) from (103, 20)
+WARNING:root:({(103, 20): 0}, {(103, 20): 33.52610922848042}, {(103, 20): 33.52610922848042})
+WARNING:root:came_from:
+WARNING:root:{}
+WARNING:root:current node:
+WARNING:root:(103, 20)
+WARNING:root:came_from:
+WARNING:root:{(102, 20): (103, 20), (103, 21): (103, 20), (103, 19): (103, 20)}
+WARNING:root:current node:
+WARNING:root:(102, 20)
+WARNING:root:came_from:
+WARNING:root:{(102, 20): (103, 20), (103, 21): (103, 20), (103, 19): (103, 20)}
+WARNING:root:current node:
+WARNING:root:(103, 20)
+WARNING:root:current path: [(103, 20)]
+WARNING:root:came_from:
+WARNING:root:{(102, 20): (103, 20), (103, 21): (103, 20), (103, 19): (103, 20)}
+WARNING:root:current node:
+WARNING:root:(103, 19)
+WARNING:root:came_from:
+WARNING:root:{(102, 20): (103, 20), (103, 21): (103, 20), (103, 19): (103, 20)}
+WARNING:root:current node:
+WARNING:root:(103, 20)
+WARNING:root:current path: [(103, 20)]
+WARNING:root:came_from:
+WARNING:root:{(102, 20): (103, 20), (103, 21): (103, 20), (103, 19): (103, 20)}
+WARNING:root:current node:
+WARNING:root:(103, 21)
+WARNING:root:came_from:
+WARNING:root:{(102, 20): (103, 20), (103, 21): (103, 20), (103, 19): (103, 20)}
+WARNING:root:current node:
+WARNING:root:(103, 20)
+WARNING:root:current path: [(103, 20)]
+WARNING:root:came_from:
+WARNING:root:{(103, 21): (103, 20), (103, 19): (103, 20), (104, 21): (103, 21), (102, 21): (103, 21), (102, 20): (103, 20), (103, 22): (103, 21)}
+WARNING:root:current node:
+WARNING:root:(102, 20)
+WARNING:root:came_from:
+WARNING:root:{(103, 21): (103, 20), (103, 19): (103, 20), (104, 21): (103, 21), (102, 21): (103, 21), (102, 20): (103, 20), (103, 22): (103, 21)}
+WARNING:root:current node:
+WARNING:root:(103, 20)
+WARNING:root:current path: [(103, 20)]
+WARNING:root:came_from:
+WARNING:root:{(103, 21): (103, 20), (103, 19): (103, 20), (104, 21): (103, 21), (102, 21): (103, 21), (102, 20): (103, 20), (103, 22): (103, 21)}
+WARNING:root:current node:
+WARNING:root:(103, 19)
+WARNING:root:came_from:
+WARNING:root:{(103, 21): (103, 20), (103, 19): (103, 20), (104, 21): (103, 21), (102, 21): (103, 21), (102, 20): (103, 20), (103, 22): (103, 21)}
+WARNING:root:current node:
+WARNING:root:(103, 20)
+WARNING:root:current path: [(103, 20)]
+WARNING:root:came_from:
+WARNING:root:{(103, 21): (103, 20), (103, 19): (103, 20), (104, 21): (103, 21), (102, 21): (103, 21), (102, 20): (103, 20), (103, 22): (103, 21)}
+WARNING:root:current node:
+WARNING:root:(102, 21)
+WARNING:root:came_from:
+WARNING:root:{(103, 21): (103, 20), (103, 19): (103, 20), (104, 21): (103, 21), (102, 21): (103, 21), (102, 20): (103, 20), (103, 22): (103, 21)}
+WARNING:root:current node:
+WARNING:root:(103, 21)
+WARNING:root:came_from:
+WARNING:root:{(103, 21): (103, 20), (103, 19): (103, 20), (104, 21): (103, 21), (102, 21): (103, 21), (102, 20): (103, 20), (103, 22): (103, 21)}
+WARNING:root:current node:
+WARNING:root:(103, 20)
+WARNING:root:current path: [(103, 20)]
+WARNING:root:current path: None
+Traceback (most recent call last):
+  File "/home/joi/workspace/googleai-python/ants.py", line 289, in run
+    bot.do_turn(ants)
+  File "./MyBot.py", line 47, in do_turn
+    path = self.findpath(ant_loc, goal_loc)
+  File "./MyBot.py", line 79, in findpath
+    a_star_values[loc] = self.a_star_f(loc, goal, came_from)
+  File "./MyBot.py", line 115, in a_star_f
+    return self.a_star_g(came_from, start) + self.a_star_h(start, goal)  # start should be the current position in the path
+  File "./MyBot.py", line 105, in a_star_g
+    travelled = self.reconstruct_path(came_from, loc)
+  File "./MyBot.py", line 126, in reconstruct_path
+    return p.append(current_node)
+AttributeError: 'NoneType' object has no attribute 'append'
+turn    1 bot 0 timed out
