@@ -1,0 +1,9 @@
+turn   44 bot 3 invalid actions:
+o 11 1 w # not player ant
+turn   45 bot 3 invalid actions:
+o 11 0 s # not player ant
+turn   46 bot 3 invalid actions:
+o 12 0 s # not player ant
+turn   47 bot 3 invalid actions:
+o 13 0 s # not player ant
+turn   48 bot 3 timed out

@@ -44,11 +44,20 @@ class MyBot:
       goal_loc = self.closest_food(ant_loc)
       logging.debug('pos: %s ___ goal: %s' % (str(ant_loc), str(goal_loc)))
       if ant_loc and goal_loc:
-        path = self.findpath(ant_loc, goal_loc)
-        direction = self.ants.direction(ant_loc, goal_loc)[0]
-        new_loc = self.ants.destination(ant_loc, direction)
-        if (self.ants.passable(new_loc)):
-          self.ants.issue_order((ant_loc, direction))
+        distance = self.ants.distance(ant_loc, goal_loc)
+        logging.debug('distance is %s' % (repr(distance)))
+
+        if distance < 15: # else we will timeout
+          path = self.findpath(ant_loc, goal_loc)
+        else:
+          path = [(ant_loc[0]+1, ant_loc[1])]
+        logging.warning('ant at %s is going to go to %s via:\n%s' % (ant_loc, goal_loc, path))
+        new_loc = path.pop() 
+        if new_loc: 
+          direction = self.ants.direction(ant_loc, new_loc)[0]
+          if (self.ants.passable(new_loc)):  #should be passable already
+            logging.warning('move order issued: ant at %s going %s to reach %s' % (ant_loc, direction, new_loc))
+            self.ants.issue_order((ant_loc, direction))
       if self.ants.time_remaining() < 10:
         break
 
@@ -62,7 +71,6 @@ class MyBot:
     return dest
 
   def findpath(self, start, goal):  # from, to are loc tuples uses A* from wikipedia
-    logging.warning('started findpath')
     logging.warning('started finding %s from %s' % (goal, start))
     closedset = [] # list of already visited location tuples
     openset = [start] # list of location tuples at the border
@@ -71,16 +79,15 @@ class MyBot:
     h_score = {start: self.a_star_h(start, goal)}
     f_score = {start: self.a_star_h(start, goal)} # because a_star_g is 0
 
-    logging.warning((g_score, h_score, f_score))
     while len(openset) > 0:
       a_star_values = {}
       for loc in openset:
         a_star_values[loc] = self.a_star_f(loc, goal, came_from)
       opt_loc = min(a_star_values, key=a_star_values.get) # find next node with lowest f_score value
-      logging.debug(str(opt_loc))
-      #self.log('opt loc:s a star vlaues:%s', a_star_values)
       if opt_loc == goal:
-        return self.a_star_reconstruct_path(came_from, came_from[goal])
+        #logging.warning('path found reconstructing:%s' % came_from)
+        #logging.warning('reconstruction:%s' % self.reconstruct_path(came_from, came_from[goal]))
+        return self.reconstruct_path(came_from, came_from[goal])
       openset.remove(opt_loc)
       closedset.append(opt_loc)
       for loc in self.ants.neighbors(opt_loc):
@@ -120,10 +127,11 @@ class MyBot:
     #  return p.append(current_node)
     #else:
     #  return [current_node]
-    while current_node in came_from.keys():
-      r.append(current_node
-
-
+    p = []
+    while current_node in came_from.keys(): # finishes once we reach the location to which we didnt come
+      p.append(current_node)
+      current_node = came_from[current_node] # set current_node to next element
+    return p
 
 
 

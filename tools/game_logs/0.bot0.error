@@ -1,81 +1,1858 @@
-WARNING:root:started findpath
-WARNING:root:started finding (93, 52) from (103, 20)
-WARNING:root:({(103, 20): 0}, {(103, 20): 33.52610922848042}, {(103, 20): 33.52610922848042})
-WARNING:root:came_from:
-WARNING:root:{}
-WARNING:root:current node:
-WARNING:root:(103, 20)
-WARNING:root:came_from:
-WARNING:root:{(102, 20): (103, 20), (103, 21): (103, 20), (103, 19): (103, 20)}
-WARNING:root:current node:
-WARNING:root:(102, 20)
-WARNING:root:came_from:
-WARNING:root:{(102, 20): (103, 20), (103, 21): (103, 20), (103, 19): (103, 20)}
-WARNING:root:current node:
-WARNING:root:(103, 20)
-WARNING:root:current path: [(103, 20)]
-WARNING:root:came_from:
-WARNING:root:{(102, 20): (103, 20), (103, 21): (103, 20), (103, 19): (103, 20)}
-WARNING:root:current node:
-WARNING:root:(103, 19)
-WARNING:root:came_from:
-WARNING:root:{(102, 20): (103, 20), (103, 21): (103, 20), (103, 19): (103, 20)}
-WARNING:root:current node:
-WARNING:root:(103, 20)
-WARNING:root:current path: [(103, 20)]
-WARNING:root:came_from:
-WARNING:root:{(102, 20): (103, 20), (103, 21): (103, 20), (103, 19): (103, 20)}
-WARNING:root:current node:
-WARNING:root:(103, 21)
-WARNING:root:came_from:
-WARNING:root:{(102, 20): (103, 20), (103, 21): (103, 20), (103, 19): (103, 20)}
-WARNING:root:current node:
-WARNING:root:(103, 20)
-WARNING:root:current path: [(103, 20)]
-WARNING:root:came_from:
-WARNING:root:{(103, 21): (103, 20), (103, 19): (103, 20), (104, 21): (103, 21), (102, 21): (103, 21), (102, 20): (103, 20), (103, 22): (103, 21)}
-WARNING:root:current node:
-WARNING:root:(102, 20)
-WARNING:root:came_from:
-WARNING:root:{(103, 21): (103, 20), (103, 19): (103, 20), (104, 21): (103, 21), (102, 21): (103, 21), (102, 20): (103, 20), (103, 22): (103, 21)}
-WARNING:root:current node:
-WARNING:root:(103, 20)
-WARNING:root:current path: [(103, 20)]
-WARNING:root:came_from:
-WARNING:root:{(103, 21): (103, 20), (103, 19): (103, 20), (104, 21): (103, 21), (102, 21): (103, 21), (102, 20): (103, 20), (103, 22): (103, 21)}
-WARNING:root:current node:
-WARNING:root:(103, 19)
-WARNING:root:came_from:
-WARNING:root:{(103, 21): (103, 20), (103, 19): (103, 20), (104, 21): (103, 21), (102, 21): (103, 21), (102, 20): (103, 20), (103, 22): (103, 21)}
-WARNING:root:current node:
-WARNING:root:(103, 20)
-WARNING:root:current path: [(103, 20)]
-WARNING:root:came_from:
-WARNING:root:{(103, 21): (103, 20), (103, 19): (103, 20), (104, 21): (103, 21), (102, 21): (103, 21), (102, 20): (103, 20), (103, 22): (103, 21)}
-WARNING:root:current node:
-WARNING:root:(102, 21)
-WARNING:root:came_from:
-WARNING:root:{(103, 21): (103, 20), (103, 19): (103, 20), (104, 21): (103, 21), (102, 21): (103, 21), (102, 20): (103, 20), (103, 22): (103, 21)}
-WARNING:root:current node:
-WARNING:root:(103, 21)
-WARNING:root:came_from:
-WARNING:root:{(103, 21): (103, 20), (103, 19): (103, 20), (104, 21): (103, 21), (102, 21): (103, 21), (102, 20): (103, 20), (103, 22): (103, 21)}
-WARNING:root:current node:
-WARNING:root:(103, 20)
-WARNING:root:current path: [(103, 20)]
-WARNING:root:current path: None
-Traceback (most recent call last):
-  File "/home/joi/workspace/googleai-python/ants.py", line 289, in run
-    bot.do_turn(ants)
-  File "./MyBot.py", line 47, in do_turn
-    path = self.findpath(ant_loc, goal_loc)
-  File "./MyBot.py", line 79, in findpath
-    a_star_values[loc] = self.a_star_f(loc, goal, came_from)
-  File "./MyBot.py", line 115, in a_star_f
-    return self.a_star_g(came_from, start) + self.a_star_h(start, goal)  # start should be the current position in the path
-  File "./MyBot.py", line 105, in a_star_g
-    travelled = self.reconstruct_path(came_from, loc)
-  File "./MyBot.py", line 126, in reconstruct_path
-    return p.append(current_node)
-AttributeError: 'NoneType' object has no attribute 'append'
-turn    1 bot 0 timed out
+WARNING:root:started finding (99, 21) from (103, 20)
+WARNING:root:ant at (103, 20) is going to go to (99, 21) via:
+[(99, 20), (100, 20), (101, 20), (102, 20)]
+WARNING:root:move order issued: ant at (103, 20) going n to reach (102, 20)
+WARNING:root:started finding (88, 68) from (91, 59)
+WARNING:root:ant at (91, 59) is going to go to (88, 68) via:
+[(89, 68), (89, 67), (90, 67), (90, 66), (90, 65), (91, 65), (91, 64), (92, 64), (93, 64), (93, 63), (93, 62), (94, 62), (94, 61), (94, 60), (93, 60), (92, 60), (91, 60)]
+WARNING:root:move order issued: ant at (91, 59) going e to reach (91, 60)
+WARNING:root:ant at (76, 57) is going to go to (83, 73) via:
+[(77, 57)]
+WARNING:root:move order issued: ant at (76, 57) going s to reach (77, 57)
+WARNING:root:ant at (36, 16) is going to go to (61, 34) via:
+[(37, 16)]
+WARNING:root:started finding (83, 73) from (85, 73)
+WARNING:root:ant at (85, 73) is going to go to (83, 73) via:
+[(83, 72), (84, 72), (85, 72)]
+WARNING:root:move order issued: ant at (85, 73) going w to reach (85, 72)
+WARNING:root:ant at (42, 130) is going to go to (61, 34) via:
+[(43, 130)]
+WARNING:root:started finding (61, 34) from (64, 28)
+WARNING:root:ant at (64, 28) is going to go to (61, 34) via:
+[(62, 34), (63, 34), (64, 34), (65, 34), (66, 34), (67, 34), (68, 34), (69, 34), (69, 33), (70, 33), (71, 33), (71, 32), (71, 31), (70, 31), (70, 30), (69, 30), (68, 30), (67, 30), (66, 30), (65, 30), (64, 30), (64, 29)]
+WARNING:root:move order issued: ant at (64, 28) going e to reach (64, 29)
+WARNING:root:ant at (77, 57) is going to go to (83, 73) via:
+[(78, 57)]
+WARNING:root:move order issued: ant at (77, 57) going s to reach (78, 57)
+WARNING:root:started finding (61, 34) from (64, 29)
+WARNING:root:ant at (64, 29) is going to go to (61, 34) via:
+[(62, 34), (63, 34), (64, 34), (65, 34), (66, 34), (67, 34), (68, 34), (69, 34), (69, 33), (70, 33), (71, 33), (71, 32), (71, 31), (70, 31), (70, 30), (69, 30), (68, 30), (67, 30), (66, 30), (65, 30), (64, 30)]
+WARNING:root:move order issued: ant at (64, 29) going e to reach (64, 30)
+WARNING:root:started finding (83, 73) from (85, 72)
+WARNING:root:ant at (85, 72) is going to go to (83, 73) via:
+[(83, 72), (84, 72)]
+WARNING:root:move order issued: ant at (85, 72) going n to reach (84, 72)
+WARNING:root:ant at (36, 16) is going to go to (61, 34) via:
+[(37, 16)]
+WARNING:root:started finding (99, 21) from (102, 20)
+WARNING:root:ant at (102, 20) is going to go to (99, 21) via:
+[(99, 20), (100, 20), (101, 20)]
+WARNING:root:move order issued: ant at (102, 20) going n to reach (101, 20)
+WARNING:root:started finding (88, 68) from (91, 60)
+WARNING:root:ant at (91, 60) is going to go to (88, 68) via:
+[(89, 68), (89, 67), (90, 67), (90, 66), (90, 65), (91, 65), (91, 64), (92, 64), (93, 64), (93, 63), (93, 62), (94, 62), (94, 61), (94, 60), (93, 60), (92, 60)]
+WARNING:root:move order issued: ant at (91, 60) going s to reach (92, 60)
+WARNING:root:ant at (42, 130) is going to go to (61, 34) via:
+[(43, 130)]
+WARNING:root:ant at (78, 57) is going to go to (83, 73) via:
+[(79, 57)]
+WARNING:root:started finding (88, 68) from (92, 60)
+WARNING:root:ant at (92, 60) is going to go to (88, 68) via:
+[(89, 68), (89, 67), (90, 67), (90, 66), (90, 65), (91, 65), (91, 64), (92, 64), (93, 64), (93, 63), (93, 62), (94, 62), (94, 61), (94, 60), (93, 60)]
+WARNING:root:move order issued: ant at (92, 60) going s to reach (93, 60)
+WARNING:root:ant at (36, 16) is going to go to (61, 34) via:
+[(37, 16)]
+WARNING:root:started finding (99, 21) from (101, 20)
+WARNING:root:ant at (101, 20) is going to go to (99, 21) via:
+[(99, 20), (100, 20)]
+WARNING:root:move order issued: ant at (101, 20) going n to reach (100, 20)
+WARNING:root:started finding (83, 73) from (84, 72)
+WARNING:root:ant at (84, 72) is going to go to (83, 73) via:
+[(83, 72)]
+WARNING:root:move order issued: ant at (84, 72) going n to reach (83, 72)
+WARNING:root:started finding (61, 34) from (64, 30)
+WARNING:root:ant at (64, 30) is going to go to (61, 34) via:
+[(62, 34), (63, 34), (64, 34), (65, 34), (66, 34), (67, 34), (68, 34), (69, 34), (69, 33), (70, 33), (71, 33), (72, 33), (72, 32), (72, 31), (71, 31), (70, 31), (70, 30), (69, 30), (68, 30), (67, 30), (66, 30), (65, 30)]
+WARNING:root:move order issued: ant at (64, 30) going s to reach (65, 30)
+WARNING:root:ant at (42, 130) is going to go to (61, 34) via:
+[(43, 130)]
+WARNING:root:started finding (88, 68) from (83, 72)
+WARNING:root:ant at (83, 72) is going to go to (88, 68) via:
+[(88, 69), (88, 70), (87, 70), (86, 70), (86, 71), (85, 71), (85, 72), (84, 72)]
+WARNING:root:move order issued: ant at (83, 72) going s to reach (84, 72)
+WARNING:root:started finding (88, 68) from (93, 60)
+WARNING:root:ant at (93, 60) is going to go to (88, 68) via:
+[(89, 68), (89, 67), (90, 67), (90, 66), (90, 65), (91, 65), (91, 64), (92, 64), (93, 64), (93, 63), (93, 62), (94, 62), (94, 61), (94, 60)]
+WARNING:root:move order issued: ant at (93, 60) going s to reach (94, 60)
+WARNING:root:ant at (78, 57) is going to go to (88, 68) via:
+[(79, 57)]
+WARNING:root:ant at (36, 16) is going to go to (61, 34) via:
+[(37, 16)]
+WARNING:root:started finding (99, 21) from (100, 20)
+WARNING:root:ant at (100, 20) is going to go to (99, 21) via:
+[(100, 21)]
+WARNING:root:move order issued: ant at (100, 20) going e to reach (100, 21)
+WARNING:root:started finding (61, 34) from (65, 30)
+WARNING:root:ant at (65, 30) is going to go to (61, 34) via:
+[(62, 34), (63, 34), (64, 34), (65, 34), (66, 34), (67, 34), (68, 34), (69, 34), (70, 34), (71, 34), (72, 34), (72, 33), (73, 33), (73, 32), (73, 31), (73, 30), (72, 30), (71, 30), (70, 30), (69, 30), (68, 30), (67, 30), (66, 30)]
+WARNING:root:move order issued: ant at (65, 30) going s to reach (66, 30)
+WARNING:root:ant at (42, 130) is going to go to (61, 34) via:
+[(43, 130)]
+WARNING:root:started finding (88, 68) from (94, 60)
+WARNING:root:ant at (94, 60) is going to go to (88, 68) via:
+[(89, 68), (89, 67), (90, 67), (90, 66), (90, 65), (91, 65), (91, 64), (92, 64), (93, 64), (93, 63), (93, 62), (94, 62), (94, 61)]
+WARNING:root:move order issued: ant at (94, 60) going e to reach (94, 61)
+WARNING:root:ant at (78, 57) is going to go to (88, 68) via:
+[(79, 57)]
+WARNING:root:started finding (61, 34) from (66, 30)
+WARNING:root:ant at (66, 30) is going to go to (61, 34) via:
+[(62, 34), (63, 34), (64, 34), (65, 34), (66, 34), (67, 34), (68, 34), (69, 34), (70, 34), (71, 34), (72, 34), (73, 34), (73, 33), (74, 33), (74, 32), (74, 31), (74, 30), (73, 30), (72, 30), (71, 30), (70, 30), (69, 30), (68, 30), (67, 30)]
+WARNING:root:move order issued: ant at (66, 30) going s to reach (67, 30)
+WARNING:root:ant at (36, 16) is going to go to (61, 34) via:
+[(37, 16)]
+WARNING:root:started finding (88, 68) from (85, 73)
+WARNING:root:ant at (85, 73) is going to go to (88, 68) via:
+[(88, 69), (88, 70), (87, 70), (86, 70), (86, 71), (85, 71), (85, 72)]
+WARNING:root:move order issued: ant at (85, 73) going w to reach (85, 72)
+WARNING:root:started finding (88, 68) from (84, 72)
+WARNING:root:ant at (84, 72) is going to go to (88, 68) via:
+[(88, 69), (88, 70), (87, 70), (86, 70), (86, 71), (85, 71), (84, 71)]
+WARNING:root:move order issued: ant at (84, 72) going w to reach (84, 71)
+WARNING:root:ant at (100, 21) is going to go to (61, 34) via:
+[(101, 21)]
+WARNING:root:move order issued: ant at (100, 21) going s to reach (101, 21)
+WARNING:root:ant at (42, 130) is going to go to (61, 34) via:
+[(43, 130)]
+WARNING:root:started finding (101, 63) from (94, 61)
+WARNING:root:ant at (94, 61) is going to go to (101, 63) via:
+[(101, 64), (100, 64), (99, 64), (99, 65), (98, 65), (97, 65), (96, 65), (96, 64), (96, 63), (96, 62), (96, 61), (95, 61)]
+WARNING:root:move order issued: ant at (94, 61) going s to reach (95, 61)
+WARNING:root:ant at (78, 57) is going to go to (88, 68) via:
+[(79, 57)]
+WARNING:root:started finding (61, 34) from (67, 30)
+WARNING:root:ant at (67, 30) is going to go to (61, 34) via:
+[(62, 34), (62, 35), (63, 35), (64, 35), (65, 35), (66, 35), (67, 35), (68, 35), (69, 35), (70, 35), (71, 35), (72, 35), (73, 35), (74, 35), (74, 34), (74, 33), (75, 33), (75, 32), (75, 31), (75, 30), (74, 30), (73, 30), (72, 30), (71, 30), (70, 30), (69, 30), (68, 30)]
+WARNING:root:move order issued: ant at (67, 30) going s to reach (68, 30)
+WARNING:root:ant at (36, 16) is going to go to (61, 34) via:
+[(37, 16)]
+WARNING:root:started finding (88, 68) from (84, 71)
+WARNING:root:ant at (84, 71) is going to go to (88, 68) via:
+[(88, 69), (88, 70), (87, 70), (86, 70), (86, 71), (85, 71)]
+WARNING:root:move order issued: ant at (84, 71) going s to reach (85, 71)
+WARNING:root:started finding (88, 68) from (85, 72)
+WARNING:root:ant at (85, 72) is going to go to (88, 68) via:
+[(88, 69), (88, 70), (87, 70), (86, 70), (86, 71), (85, 71)]
+WARNING:root:move order issued: ant at (85, 72) going w to reach (85, 71)
+WARNING:root:ant at (101, 21) is going to go to (101, 63) via:
+[(102, 21)]
+WARNING:root:move order issued: ant at (101, 21) going s to reach (102, 21)
+WARNING:root:ant at (42, 130) is going to go to (61, 34) via:
+[(43, 130)]
+WARNING:root:started finding (61, 34) from (64, 28)
+WARNING:root:ant at (64, 28) is going to go to (61, 34) via:
+[(62, 34), (62, 35), (63, 35), (64, 35), (65, 35), (66, 35), (67, 35), (68, 35), (69, 35), (70, 35), (71, 35), (72, 35), (73, 35), (74, 35), (74, 34), (74, 33), (75, 33), (75, 32), (75, 31), (75, 30), (74, 30), (73, 30), (72, 30), (71, 30), (70, 30), (69, 30), (68, 30), (67, 30), (66, 30), (65, 30), (64, 30), (64, 29)]
+WARNING:root:move order issued: ant at (64, 28) going e to reach (64, 29)
+WARNING:root:started finding (101, 63) from (95, 61)
+WARNING:root:ant at (95, 61) is going to go to (101, 63) via:
+[(101, 64), (100, 64), (99, 64), (99, 65), (98, 65), (97, 65), (96, 65), (96, 64), (96, 63), (96, 62), (96, 61)]
+WARNING:root:move order issued: ant at (95, 61) going s to reach (96, 61)
+WARNING:root:ant at (78, 57) is going to go to (101, 63) via:
+[(79, 57)]
+WARNING:root:ant at (102, 21) is going to go to (101, 63) via:
+[(103, 21)]
+WARNING:root:move order issued: ant at (102, 21) going s to reach (103, 21)
+WARNING:root:ant at (36, 16) is going to go to (61, 34) via:
+[(37, 16)]
+WARNING:root:started finding (61, 34) from (64, 29)
+WARNING:root:ant at (64, 29) is going to go to (61, 34) via:
+[(62, 34), (62, 35), (63, 35), (64, 35), (65, 35), (66, 35), (67, 35), (68, 35), (69, 35), (70, 35), (71, 35), (72, 35), (73, 35), (74, 35), (75, 35), (75, 34), (75, 33), (76, 33), (76, 32), (76, 31), (75, 31), (75, 30), (74, 30), (73, 30), (72, 30), (71, 30), (70, 30), (69, 30), (68, 30), (67, 30), (66, 30), (65, 30), (64, 30)]
+WARNING:root:move order issued: ant at (64, 29) going e to reach (64, 30)
+WARNING:root:started finding (61, 34) from (68, 30)
+WARNING:root:ant at (68, 30) is going to go to (61, 34) via:
+[(62, 34), (62, 35), (63, 35), (64, 35), (65, 35), (66, 35), (67, 35), (68, 35), (69, 35), (70, 35), (71, 35), (72, 35), (73, 35), (74, 35), (75, 35), (75, 34), (75, 33), (76, 33), (76, 32), (76, 31), (75, 31), (75, 30), (74, 30), (73, 30), (72, 30), (71, 30), (70, 30), (69, 30)]
+WARNING:root:move order issued: ant at (68, 30) going s to reach (69, 30)
+WARNING:root:ant at (42, 130) is going to go to (61, 34) via:
+[(43, 130)]
+WARNING:root:started finding (61, 34) from (69, 30)
+WARNING:root:ant at (69, 30) is going to go to (61, 34) via:
+[(62, 34), (62, 35), (63, 35), (63, 36), (64, 36), (65, 36), (66, 36), (67, 36), (68, 36), (69, 36), (70, 36), (71, 36), (72, 36), (73, 36), (74, 36), (75, 36), (75, 35), (76, 35), (76, 34), (76, 33), (76, 32), (76, 31), (75, 31), (75, 30), (74, 30), (73, 30), (72, 30), (71, 30), (70, 30)]
+WARNING:root:move order issued: ant at (69, 30) going s to reach (70, 30)
+WARNING:root:ant at (103, 21) is going to go to (101, 63) via:
+[(104, 21)]
+WARNING:root:move order issued: ant at (103, 21) going s to reach (104, 21)
+WARNING:root:ant at (78, 57) is going to go to (101, 63) via:
+[(79, 57)]
+WARNING:root:ant at (36, 16) is going to go to (61, 34) via:
+[(37, 16)]
+WARNING:root:started finding (61, 34) from (64, 30)
+WARNING:root:ant at (64, 30) is going to go to (61, 34) via:
+[(62, 34), (62, 35), (63, 35), (63, 36), (64, 36), (65, 36), (66, 36), (67, 36), (68, 36), (69, 36), (70, 36), (71, 36), (72, 36), (73, 36), (74, 36), (75, 36), (75, 35), (76, 35), (76, 34), (76, 33), (76, 32), (76, 31), (75, 31), (75, 30), (74, 30), (73, 30), (72, 30), (71, 30), (70, 30), (69, 30), (68, 30), (67, 30), (66, 30), (65, 30)]
+WARNING:root:move order issued: ant at (64, 30) going s to reach (65, 30)
+WARNING:root:started finding (101, 63) from (96, 61)
+WARNING:root:ant at (96, 61) is going to go to (101, 63) via:
+[(101, 64), (100, 64), (99, 64), (99, 65), (98, 65), (97, 65), (96, 65), (96, 64), (96, 63), (96, 62)]
+WARNING:root:move order issued: ant at (96, 61) going e to reach (96, 62)
+WARNING:root:ant at (42, 130) is going to go to (61, 34) via:
+[(43, 130)]
+WARNING:root:ant at (78, 57) is going to go to (101, 63) via:
+[(79, 57)]
+WARNING:root:ant at (104, 21) is going to go to (101, 63) via:
+[(105, 21)]
+WARNING:root:started finding (61, 34) from (70, 30)
+WARNING:root:ant at (70, 30) is going to go to (61, 34) via:
+[(62, 34), (62, 35), (63, 35), (63, 36), (64, 36), (65, 36), (66, 36), (67, 36), (68, 36), (69, 36), (70, 36), (71, 36), (72, 36), (73, 36), (73, 37), (74, 37), (75, 37), (75, 36), (76, 36), (76, 35), (76, 34), (76, 33), (76, 32), (76, 31), (75, 31), (75, 30), (74, 30), (73, 30), (72, 30), (71, 30)]
+WARNING:root:move order issued: ant at (70, 30) going s to reach (71, 30)
+WARNING:root:started finding (101, 63) from (96, 62)
+WARNING:root:ant at (96, 62) is going to go to (101, 63) via:
+[(101, 64), (100, 64), (99, 64), (99, 65), (98, 65), (97, 65), (96, 65), (96, 64), (96, 63)]
+WARNING:root:move order issued: ant at (96, 62) going e to reach (96, 63)
+WARNING:root:ant at (36, 16) is going to go to (61, 34) via:
+[(37, 16)]
+WARNING:root:started finding (61, 34) from (65, 30)
+WARNING:root:ant at (65, 30) is going to go to (61, 34) via:
+[(62, 34), (62, 35), (63, 35), (63, 36), (64, 36), (65, 36), (66, 36), (67, 36), (68, 36), (69, 36), (70, 36), (71, 36), (72, 36), (73, 36), (73, 37), (74, 37), (75, 37), (75, 36), (76, 36), (76, 35), (76, 34), (76, 33), (76, 32), (76, 31), (75, 31), (75, 30), (74, 30), (73, 30), (72, 30), (71, 30), (70, 30), (69, 30), (68, 30), (67, 30), (66, 30)]
+WARNING:root:move order issued: ant at (65, 30) going s to reach (66, 30)
+WARNING:root:ant at (42, 130) is going to go to (61, 34) via:
+[(43, 130)]
+WARNING:root:ant at (78, 57) is going to go to (101, 63) via:
+[(79, 57)]
+WARNING:root:started finding (61, 34) from (66, 30)
+WARNING:root:ant at (66, 30) is going to go to (61, 34) via:
+[(62, 34), (62, 35), (63, 35), (63, 36), (64, 36), (64, 37), (64, 38), (65, 38), (66, 38), (67, 38), (68, 38), (69, 38), (70, 38), (71, 38), (72, 38), (73, 38), (74, 38), (74, 37), (75, 37), (76, 37), (76, 36), (76, 35), (76, 34), (76, 33), (76, 32), (76, 31), (75, 31), (75, 30), (74, 30), (73, 30), (72, 30), (71, 30), (70, 30), (69, 30), (68, 30), (67, 30)]
+WARNING:root:move order issued: ant at (66, 30) going s to reach (67, 30)
+WARNING:root:ant at (104, 21) is going to go to (101, 63) via:
+[(105, 21)]
+WARNING:root:ant at (36, 16) is going to go to (61, 34) via:
+[(37, 16)]
+WARNING:root:started finding (61, 34) from (71, 30)
+WARNING:root:ant at (71, 30) is going to go to (61, 34) via:
+[(62, 34), (62, 35), (63, 35), (63, 36), (64, 36), (64, 37), (64, 38), (65, 38), (66, 38), (67, 38), (68, 38), (69, 38), (70, 38), (71, 38), (72, 38), (73, 38), (74, 38), (74, 37), (75, 37), (76, 37), (76, 36), (76, 35), (76, 34), (76, 33), (76, 32), (76, 31), (75, 31), (75, 30), (74, 30), (73, 30), (72, 30)]
+WARNING:root:move order issued: ant at (71, 30) going s to reach (72, 30)
+WARNING:root:started finding (101, 63) from (96, 63)
+WARNING:root:ant at (96, 63) is going to go to (101, 63) via:
+[(101, 64), (100, 64), (99, 64), (99, 65), (98, 65), (97, 65), (96, 65), (96, 64)]
+WARNING:root:move order issued: ant at (96, 63) going e to reach (96, 64)
+WARNING:root:ant at (42, 130) is going to go to (61, 34) via:
+[(43, 130)]
+WARNING:root:started finding (101, 63) from (96, 64)
+WARNING:root:ant at (96, 64) is going to go to (101, 63) via:
+[(100, 63), (100, 64), (99, 64), (99, 65), (98, 65), (97, 65), (96, 65)]
+WARNING:root:move order issued: ant at (96, 64) going e to reach (96, 65)
+WARNING:root:ant at (78, 57) is going to go to (101, 63) via:
+[(79, 57)]
+WARNING:root:ant at (104, 21) is going to go to (101, 63) via:
+[(105, 21)]
+WARNING:root:started finding (61, 34) from (67, 30)
+WARNING:root:ant at (67, 30) is going to go to (61, 34) via:
+[(62, 34), (62, 35), (63, 35), (63, 36), (64, 36), (64, 37), (64, 38), (65, 38), (66, 38), (67, 38), (68, 38), (69, 38), (70, 38), (71, 38), (72, 38), (73, 38), (74, 38), (75, 38), (75, 37), (76, 37), (76, 36), (76, 35), (76, 34), (76, 33), (76, 32), (76, 31), (75, 31), (75, 30), (74, 30), (73, 30), (72, 30), (71, 30), (70, 30), (69, 30), (68, 30)]
+WARNING:root:move order issued: ant at (67, 30) going s to reach (68, 30)
+WARNING:root:ant at (36, 16) is going to go to (61, 34) via:
+[(37, 16)]
+WARNING:root:ant at (72, 30) is going to go to (61, 34) via:
+[(73, 30)]
+WARNING:root:move order issued: ant at (72, 30) going s to reach (73, 30)
+WARNING:root:ant at (42, 130) is going to go to (61, 34) via:
+[(43, 130)]
+WARNING:root:started finding (101, 63) from (96, 65)
+WARNING:root:ant at (96, 65) is going to go to (101, 63) via:
+[(101, 64), (100, 64), (99, 64), (99, 65), (98, 65), (97, 65)]
+WARNING:root:move order issued: ant at (96, 65) going s to reach (97, 65)
+WARNING:root:ant at (78, 57) is going to go to (101, 63) via:
+[(79, 57)]
+WARNING:root:ant at (104, 21) is going to go to (101, 63) via:
+[(105, 21)]
+WARNING:root:ant at (36, 16) is going to go to (101, 63) via:
+[(37, 16)]
+WARNING:root:ant at (73, 30) is going to go to (101, 63) via:
+[(74, 30)]
+WARNING:root:move order issued: ant at (73, 30) going s to reach (74, 30)
+WARNING:root:ant at (68, 30) is going to go to (101, 63) via:
+[(69, 30)]
+WARNING:root:move order issued: ant at (68, 30) going s to reach (69, 30)
+WARNING:root:ant at (42, 130) is going to go to (101, 63) via:
+[(43, 130)]
+WARNING:root:ant at (69, 30) is going to go to (71, 58) via:
+[(70, 30)]
+WARNING:root:move order issued: ant at (69, 30) going s to reach (70, 30)
+WARNING:root:ant at (74, 30) is going to go to (71, 58) via:
+[(75, 30)]
+WARNING:root:move order issued: ant at (74, 30) going s to reach (75, 30)
+WARNING:root:started finding (71, 58) from (78, 57)
+WARNING:root:ant at (78, 57) is going to go to (71, 58) via:
+[(70, 58), (69, 58), (69, 57), (68, 57), (68, 56), (68, 55), (69, 55), (70, 55), (71, 55), (71, 54), (72, 54), (73, 54), (74, 54), (75, 54), (75, 53), (76, 53), (76, 52), (77, 52), (78, 52), (78, 51), (78, 50), (78, 49), (79, 49), (80, 49), (81, 49), (81, 50), (82, 50), (82, 51), (82, 52), (82, 53), (82, 54), (82, 55), (82, 56), (82, 57), (82, 58), (81, 58), (80, 58), (79, 58), (78, 58)]
+WARNING:root:move order issued: ant at (78, 57) going e to reach (78, 58)
+WARNING:root:ant at (104, 21) is going to go to (71, 58) via:
+[(105, 21)]
+WARNING:root:ant at (36, 16) is going to go to (71, 58) via:
+[(37, 16)]
+WARNING:root:ant at (42, 130) is going to go to (71, 58) via:
+[(43, 130)]
+WARNING:root:ant at (75, 30) is going to go to (71, 58) via:
+[(76, 30)]
+WARNING:root:move order issued: ant at (75, 30) going s to reach (76, 30)
+WARNING:root:ant at (104, 21) is going to go to (71, 58) via:
+[(105, 21)]
+WARNING:root:ant at (70, 30) is going to go to (71, 58) via:
+[(71, 30)]
+WARNING:root:move order issued: ant at (70, 30) going s to reach (71, 30)
+WARNING:root:started finding (71, 58) from (78, 58)
+WARNING:root:ant at (78, 58) is going to go to (71, 58) via:
+[(70, 58), (69, 58), (69, 57), (68, 57), (68, 56), (68, 55), (69, 55), (70, 55), (71, 55), (71, 54), (72, 54), (73, 54), (74, 54), (75, 54), (75, 53), (76, 53), (76, 52), (77, 52), (78, 52), (78, 51), (78, 50), (78, 49), (79, 49), (80, 49), (81, 49), (81, 50), (82, 50), (82, 51), (82, 52), (82, 53), (82, 54), (82, 55), (82, 56), (82, 57), (82, 58), (81, 58), (80, 58), (79, 58)]
+WARNING:root:move order issued: ant at (78, 58) going s to reach (79, 58)
+WARNING:root:ant at (36, 16) is going to go to (71, 58) via:
+[(37, 16)]
+WARNING:root:ant at (42, 130) is going to go to (71, 58) via:
+[(43, 130)]
+WARNING:root:ant at (104, 21) is going to go to (75, 59) via:
+[(105, 21)]
+WARNING:root:ant at (36, 16) is going to go to (75, 59) via:
+[(37, 16)]
+WARNING:root:ant at (71, 30) is going to go to (75, 59) via:
+[(72, 30)]
+WARNING:root:move order issued: ant at (71, 30) going s to reach (72, 30)
+WARNING:root:ant at (76, 30) is going to go to (75, 59) via:
+[(77, 30)]
+WARNING:root:move order issued: ant at (76, 30) going s to reach (77, 30)
+WARNING:root:started finding (75, 59) from (79, 58)
+WARNING:root:ant at (79, 58) is going to go to (75, 59) via:
+[(76, 59), (76, 58), (77, 58), (78, 58)]
+WARNING:root:move order issued: ant at (79, 58) going n to reach (78, 58)
+WARNING:root:ant at (42, 130) is going to go to (75, 59) via:
+[(43, 130)]
+WARNING:root:ant at (104, 21) is going to go to (81, 24) via:
+[(105, 21)]
+WARNING:root:ant at (36, 16) is going to go to (81, 24) via:
+[(37, 16)]
+WARNING:root:ant at (72, 30) is going to go to (81, 24) via:
+[(73, 30)]
+WARNING:root:move order issued: ant at (72, 30) going s to reach (73, 30)
+WARNING:root:started finding (75, 59) from (78, 58)
+WARNING:root:ant at (78, 58) is going to go to (75, 59) via:
+[(76, 59), (76, 58), (77, 58)]
+WARNING:root:move order issued: ant at (78, 58) going n to reach (77, 58)
+WARNING:root:started finding (81, 24) from (77, 30)
+WARNING:root:ant at (77, 30) is going to go to (81, 24) via:
+[(82, 24), (83, 24), (83, 25), (84, 25), (84, 26), (84, 27), (84, 28), (83, 28), (82, 28), (82, 29), (82, 30), (82, 31), (82, 32), (82, 33), (82, 34), (81, 34), (81, 35), (81, 36), (81, 37), (80, 37), (80, 38), (79, 38), (78, 38), (78, 37), (78, 36), (78, 35), (78, 34), (78, 33), (78, 32), (78, 31), (78, 30)]
+WARNING:root:move order issued: ant at (77, 30) going s to reach (78, 30)
+WARNING:root:ant at (42, 130) is going to go to (81, 24) via:
+[(43, 130)]
+WARNING:root:started finding (81, 24) from (78, 30)
+WARNING:root:ant at (78, 30) is going to go to (81, 24) via:
+[(82, 24), (83, 24), (84, 24), (84, 25), (85, 25), (85, 26), (85, 27), (84, 27), (84, 28), (83, 28), (82, 28), (82, 29), (82, 30), (82, 31), (82, 32), (82, 33), (82, 34), (81, 34), (81, 35), (81, 36), (81, 37), (81, 38), (80, 38), (79, 38), (78, 38), (78, 37), (78, 36), (78, 35), (78, 34), (78, 33), (78, 32), (78, 31)]
+WARNING:root:move order issued: ant at (78, 30) going e to reach (78, 31)
+WARNING:root:ant at (104, 21) is going to go to (81, 24) via:
+[(105, 21)]
+WARNING:root:started finding (75, 59) from (77, 58)
+WARNING:root:ant at (77, 58) is going to go to (75, 59) via:
+[(76, 59), (76, 58)]
+WARNING:root:move order issued: ant at (77, 58) going n to reach (76, 58)
+WARNING:root:ant at (36, 16) is going to go to (81, 24) via:
+[(37, 16)]
+WARNING:root:started finding (81, 24) from (73, 30)
+WARNING:root:ant at (73, 30) is going to go to (81, 24) via:
+[(82, 24), (83, 24), (84, 24), (84, 25), (85, 25), (85, 26), (85, 27), (84, 27), (84, 28), (83, 28), (82, 28), (82, 29), (82, 30), (82, 31), (82, 32), (82, 33), (82, 34), (81, 34), (81, 35), (81, 36), (81, 37), (81, 38), (80, 38), (79, 38), (78, 38), (78, 37), (78, 36), (78, 35), (78, 34), (78, 33), (78, 32), (78, 31), (78, 30), (77, 30), (76, 30), (75, 30), (74, 30)]
+WARNING:root:move order issued: ant at (73, 30) going s to reach (74, 30)
+WARNING:root:ant at (42, 130) is going to go to (81, 24) via:
+[(43, 130)]
+WARNING:root:ant at (74, 30) is going to go to (75, 59) via:
+[(75, 30)]
+WARNING:root:move order issued: ant at (74, 30) going s to reach (75, 30)
+WARNING:root:ant at (78, 31) is going to go to (75, 59) via:
+[(79, 31)]
+WARNING:root:started finding (75, 59) from (76, 58)
+WARNING:root:ant at (76, 58) is going to go to (75, 59) via:
+[(76, 59)]
+WARNING:root:move order issued: ant at (76, 58) going e to reach (76, 59)
+WARNING:root:ant at (104, 21) is going to go to (75, 59) via:
+[(105, 21)]
+WARNING:root:ant at (36, 16) is going to go to (71, 58) via:
+[(37, 16)]
+WARNING:root:ant at (42, 130) is going to go to (71, 58) via:
+[(43, 130)]
+WARNING:root:ant at (78, 31) is going to go to (71, 58) via:
+[(79, 31)]
+WARNING:root:ant at (75, 30) is going to go to (71, 58) via:
+[(76, 30)]
+WARNING:root:move order issued: ant at (75, 30) going s to reach (76, 30)
+WARNING:root:started finding (71, 58) from (76, 59)
+WARNING:root:ant at (76, 59) is going to go to (71, 58) via:
+[(70, 58), (69, 58), (69, 57), (68, 57), (68, 56), (68, 55), (69, 55), (70, 55), (71, 55), (71, 54), (72, 54), (73, 54), (74, 54), (75, 54), (75, 53), (76, 53), (76, 52), (77, 52), (78, 52), (78, 51), (78, 50), (78, 49), (79, 49), (80, 49), (81, 49), (81, 50), (82, 50), (82, 51), (82, 52), (82, 53), (82, 54), (82, 55), (82, 56), (82, 57), (82, 58), (81, 58), (80, 58), (79, 58), (78, 58), (77, 58), (76, 58)]
+WARNING:root:move order issued: ant at (76, 59) going w to reach (76, 58)
+WARNING:root:ant at (104, 21) is going to go to (71, 58) via:
+[(105, 21)]
+WARNING:root:ant at (36, 16) is going to go to (71, 58) via:
+[(37, 16)]
+WARNING:root:ant at (42, 130) is going to go to (71, 58) via:
+[(43, 130)]
+WARNING:root:ant at (78, 31) is going to go to (71, 58) via:
+[(79, 31)]
+WARNING:root:started finding (71, 58) from (76, 58)
+WARNING:root:ant at (76, 58) is going to go to (71, 58) via:
+[(70, 58), (69, 58), (69, 57), (68, 57), (68, 56), (68, 55), (69, 55), (70, 55), (71, 55), (71, 54), (72, 54), (73, 54), (74, 54), (75, 54), (75, 53), (76, 53), (76, 52), (77, 52), (78, 52), (78, 51), (78, 50), (78, 49), (79, 49), (80, 49), (81, 49), (81, 50), (82, 50), (82, 51), (82, 52), (82, 53), (82, 54), (82, 55), (82, 56), (82, 57), (82, 58), (81, 58), (80, 58), (79, 58), (78, 58), (77, 58)]
+WARNING:root:move order issued: ant at (76, 58) going s to reach (77, 58)
+WARNING:root:started finding (71, 58) from (76, 57)
+WARNING:root:ant at (76, 57) is going to go to (71, 58) via:
+[(70, 58), (69, 58), (69, 57), (68, 57), (68, 56), (68, 55), (69, 55), (70, 55), (71, 55), (71, 54), (72, 54), (73, 54), (74, 54), (75, 54), (75, 53), (76, 53), (76, 52), (77, 52), (78, 52), (78, 51), (78, 50), (78, 49), (79, 49), (80, 49), (81, 49), (81, 50), (82, 50), (82, 51), (82, 52), (82, 53), (82, 54), (82, 55), (82, 56), (82, 57), (82, 58), (81, 58), (80, 58), (79, 58), (78, 58), (77, 58), (76, 58)]
+WARNING:root:move order issued: ant at (76, 57) going e to reach (76, 58)
+WARNING:root:ant at (36, 16) is going to go to (71, 58) via:
+[(37, 16)]
+WARNING:root:ant at (76, 30) is going to go to (71, 58) via:
+[(77, 30)]
+WARNING:root:move order issued: ant at (76, 30) going s to reach (77, 30)
+WARNING:root:ant at (104, 21) is going to go to (71, 58) via:
+[(105, 21)]
+WARNING:root:ant at (42, 130) is going to go to (71, 58) via:
+[(43, 130)]
+WARNING:root:started finding (81, 24) from (78, 31)
+WARNING:root:ant at (78, 31) is going to go to (81, 24) via:
+[(82, 24), (83, 24), (84, 24), (84, 25), (85, 25), (85, 26), (85, 27), (84, 27), (84, 28), (83, 28), (82, 28), (82, 29), (82, 30), (82, 31), (82, 32), (82, 33), (82, 34), (82, 35), (82, 36), (82, 37), (82, 38), (81, 38), (81, 39), (80, 39), (79, 39), (79, 38), (78, 38), (78, 37), (78, 36), (78, 35), (78, 34), (78, 33), (78, 32)]
+WARNING:root:move order issued: ant at (78, 31) going e to reach (78, 32)
+WARNING:root:started finding (71, 58) from (76, 58)
+WARNING:root:ant at (76, 58) is going to go to (71, 58) via:
+[(70, 58), (69, 58), (69, 57), (68, 57), (68, 56), (68, 55), (69, 55), (70, 55), (71, 55), (71, 54), (72, 54), (73, 54), (74, 54), (75, 54), (75, 53), (76, 53), (76, 52), (77, 52), (78, 52), (78, 51), (78, 50), (78, 49), (79, 49), (80, 49), (81, 49), (81, 50), (82, 50), (82, 51), (82, 52), (82, 53), (82, 54), (82, 55), (82, 56), (82, 57), (82, 58), (81, 58), (80, 58), (79, 58), (78, 58), (77, 58)]
+WARNING:root:move order issued: ant at (76, 58) going s to reach (77, 58)
+WARNING:root:started finding (71, 58) from (77, 58)
+WARNING:root:ant at (77, 58) is going to go to (71, 58) via:
+[(70, 58), (69, 58), (69, 57), (68, 57), (68, 56), (68, 55), (69, 55), (70, 55), (71, 55), (71, 54), (72, 54), (73, 54), (74, 54), (75, 54), (75, 53), (76, 53), (76, 52), (77, 52), (78, 52), (78, 51), (78, 50), (78, 49), (79, 49), (80, 49), (81, 49), (81, 50), (82, 50), (82, 51), (82, 52), (82, 53), (82, 54), (82, 55), (82, 56), (82, 57), (82, 58), (81, 58), (80, 58), (79, 58), (78, 58)]
+WARNING:root:move order issued: ant at (77, 58) going s to reach (78, 58)
+WARNING:root:ant at (36, 16) is going to go to (81, 24) via:
+[(37, 16)]
+WARNING:root:started finding (81, 24) from (77, 30)
+WARNING:root:ant at (77, 30) is going to go to (81, 24) via:
+[(82, 24), (83, 24), (84, 24), (84, 25), (85, 25), (85, 26), (85, 27), (84, 27), (84, 28), (83, 28), (82, 28), (82, 29), (82, 30), (82, 31), (82, 32), (82, 33), (82, 34), (82, 35), (82, 36), (82, 37), (82, 38), (81, 38), (81, 39), (80, 39), (79, 39), (79, 38), (78, 38), (78, 37), (78, 36), (78, 35), (78, 34), (78, 33), (78, 32), (78, 31), (78, 30)]
+WARNING:root:move order issued: ant at (77, 30) going s to reach (78, 30)
+WARNING:root:ant at (104, 21) is going to go to (81, 24) via:
+[(105, 21)]
+WARNING:root:ant at (42, 130) is going to go to (81, 24) via:
+[(43, 130)]
+WARNING:root:started finding (81, 24) from (78, 30)
+WARNING:root:ant at (78, 30) is going to go to (81, 24) via:
+[(82, 24), (83, 24), (84, 24), (84, 25), (85, 25), (85, 26), (85, 27), (84, 27), (84, 28), (83, 28), (82, 28), (82, 29), (82, 30), (82, 31), (82, 32), (82, 33), (82, 34), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (81, 39), (81, 40), (80, 40), (79, 40), (79, 39), (79, 38), (78, 38), (78, 37), (78, 36), (78, 35), (78, 34), (78, 33), (78, 32), (78, 31)]
+WARNING:root:move order issued: ant at (78, 30) going e to reach (78, 31)
+WARNING:root:ant at (104, 21) is going to go to (81, 24) via:
+[(105, 21)]
+WARNING:root:started finding (71, 58) from (77, 58)
+WARNING:root:ant at (77, 58) is going to go to (71, 58) via:
+[(70, 58), (69, 58), (69, 57), (68, 57), (68, 56), (68, 55), (69, 55), (70, 55), (71, 55), (71, 54), (72, 54), (73, 54), (74, 54), (75, 54), (75, 53), (76, 53), (76, 52), (77, 52), (78, 52), (78, 51), (78, 50), (78, 49), (79, 49), (80, 49), (81, 49), (81, 50), (82, 50), (82, 51), (82, 52), (82, 53), (82, 54), (82, 55), (82, 56), (82, 57), (82, 58), (81, 58), (80, 58), (79, 58), (78, 58)]
+WARNING:root:move order issued: ant at (77, 58) going s to reach (78, 58)
+WARNING:root:ant at (36, 16) is going to go to (81, 24) via:
+[(37, 16)]
+WARNING:root:started finding (71, 58) from (78, 58)
+WARNING:root:ant at (78, 58) is going to go to (71, 58) via:
+[(70, 58), (69, 58), (69, 57), (68, 57), (68, 56), (68, 55), (69, 55), (70, 55), (71, 55), (71, 54), (72, 54), (73, 54), (74, 54), (75, 54), (75, 53), (76, 53), (76, 52), (77, 52), (78, 52), (78, 51), (78, 50), (78, 49), (79, 49), (80, 49), (81, 49), (81, 50), (82, 50), (82, 51), (82, 52), (82, 53), (82, 54), (82, 55), (82, 56), (82, 57), (82, 58), (81, 58), (80, 58), (79, 58)]
+WARNING:root:move order issued: ant at (78, 58) going s to reach (79, 58)
+WARNING:root:started finding (81, 24) from (78, 32)
+WARNING:root:ant at (78, 32) is going to go to (81, 24) via:
+[(82, 24), (83, 24), (84, 24), (84, 25), (85, 25), (85, 26), (85, 27), (84, 27), (84, 28), (83, 28), (82, 28), (82, 29), (82, 30), (82, 31), (82, 32), (82, 33), (82, 34), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (81, 39), (81, 40), (80, 40), (79, 40), (79, 39), (79, 38), (78, 38), (78, 37), (78, 36), (78, 35), (78, 34), (78, 33)]
+WARNING:root:move order issued: ant at (78, 32) going e to reach (78, 33)
+WARNING:root:ant at (42, 130) is going to go to (81, 24) via:
+[(43, 130)]
+WARNING:root:ant at (78, 31) is going to go to (71, 58) via:
+[(79, 31)]
+WARNING:root:ant at (104, 21) is going to go to (71, 58) via:
+[(105, 21)]
+WARNING:root:ant at (36, 16) is going to go to (71, 58) via:
+[(37, 16)]
+WARNING:root:ant at (78, 33) is going to go to (71, 58) via:
+[(79, 33)]
+WARNING:root:started finding (71, 58) from (78, 58)
+WARNING:root:ant at (78, 58) is going to go to (71, 58) via:
+[(70, 58), (69, 58), (69, 57), (68, 57), (68, 56), (68, 55), (69, 55), (70, 55), (71, 55), (71, 54), (72, 54), (73, 54), (74, 54), (75, 54), (75, 53), (76, 53), (76, 52), (77, 52), (78, 52), (78, 51), (78, 50), (78, 49), (79, 49), (80, 49), (81, 49), (81, 50), (82, 50), (82, 51), (82, 52), (82, 53), (82, 54), (82, 55), (82, 56), (82, 57), (82, 58), (81, 58), (80, 58), (79, 58)]
+WARNING:root:move order issued: ant at (78, 58) going s to reach (79, 58)
+WARNING:root:started finding (71, 58) from (79, 58)
+WARNING:root:ant at (79, 58) is going to go to (71, 58) via:
+[(70, 58), (69, 58), (69, 57), (68, 57), (68, 56), (68, 55), (69, 55), (70, 55), (71, 55), (71, 54), (72, 54), (73, 54), (74, 54), (75, 54), (75, 53), (76, 53), (76, 52), (77, 52), (78, 52), (78, 51), (78, 50), (78, 49), (79, 49), (80, 49), (81, 49), (81, 50), (82, 50), (82, 51), (82, 52), (82, 53), (82, 54), (82, 55), (82, 56), (82, 57), (82, 58), (81, 58), (80, 58)]
+WARNING:root:move order issued: ant at (79, 58) going s to reach (80, 58)
+WARNING:root:ant at (42, 130) is going to go to (71, 58) via:
+[(43, 130)]
+WARNING:root:ant at (78, 31) is going to go to (41, 17) via:
+[(79, 31)]
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:started finding (41, 17) from (36, 16)
+WARNING:root:ant at (36, 16) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (39, 23), (39, 24), (38, 24), (37, 24), (37, 23), (36, 23), (36, 22), (36, 21), (36, 20), (36, 19), (36, 18), (36, 17)]
+WARNING:root:move order issued: ant at (36, 16) going e to reach (36, 17)
+WARNING:root:ant at (78, 33) is going to go to (41, 17) via:
+[(79, 33)]
+WARNING:root:ant at (80, 58) is going to go to (41, 17) via:
+[(81, 58)]
+WARNING:root:move order issued: ant at (80, 58) going s to reach (81, 58)
+WARNING:root:ant at (79, 58) is going to go to (41, 17) via:
+[(80, 58)]
+WARNING:root:move order issued: ant at (79, 58) going s to reach (80, 58)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:ant at (78, 31) is going to go to (41, 17) via:
+[(79, 31)]
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:started finding (41, 17) from (36, 17)
+WARNING:root:ant at (36, 17) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (39, 23), (39, 24), (39, 25), (38, 25), (37, 25), (36, 25), (36, 24), (36, 23), (36, 22), (36, 21), (36, 20), (36, 19), (36, 18)]
+WARNING:root:move order issued: ant at (36, 17) going e to reach (36, 18)
+WARNING:root:ant at (78, 33) is going to go to (41, 17) via:
+[(79, 33)]
+WARNING:root:ant at (80, 58) is going to go to (41, 17) via:
+[(81, 58)]
+WARNING:root:move order issued: ant at (80, 58) going s to reach (81, 58)
+WARNING:root:ant at (81, 58) is going to go to (41, 17) via:
+[(82, 58)]
+WARNING:root:move order issued: ant at (81, 58) going s to reach (82, 58)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:ant at (78, 31) is going to go to (41, 17) via:
+[(79, 31)]
+WARNING:root:started finding (41, 17) from (36, 18)
+WARNING:root:ant at (36, 18) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (39, 25), (39, 26), (38, 26), (37, 26), (37, 25), (36, 25), (36, 24), (36, 23), (36, 22), (36, 21), (36, 20), (36, 19)]
+WARNING:root:move order issued: ant at (36, 18) going e to reach (36, 19)
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (82, 58) is going to go to (41, 17) via:
+[(83, 58)]
+WARNING:root:move order issued: ant at (82, 58) going s to reach (83, 58)
+WARNING:root:ant at (78, 33) is going to go to (41, 17) via:
+[(79, 33)]
+WARNING:root:ant at (81, 58) is going to go to (41, 17) via:
+[(82, 58)]
+WARNING:root:move order issued: ant at (81, 58) going s to reach (82, 58)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:ant at (78, 31) is going to go to (41, 17) via:
+[(79, 31)]
+WARNING:root:started finding (41, 17) from (36, 19)
+WARNING:root:ant at (36, 19) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (39, 26), (39, 27), (38, 27), (37, 27), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23), (36, 22), (36, 21), (36, 20)]
+WARNING:root:move order issued: ant at (36, 19) going e to reach (36, 20)
+WARNING:root:ant at (83, 58) is going to go to (41, 17) via:
+[(84, 58)]
+WARNING:root:move order issued: ant at (83, 58) going s to reach (84, 58)
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (82, 58) is going to go to (41, 17) via:
+[(83, 58)]
+WARNING:root:move order issued: ant at (82, 58) going s to reach (83, 58)
+WARNING:root:ant at (78, 33) is going to go to (41, 17) via:
+[(79, 33)]
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:ant at (84, 58) is going to go to (41, 17) via:
+[(85, 58)]
+WARNING:root:move order issued: ant at (84, 58) going s to reach (85, 58)
+WARNING:root:ant at (78, 31) is going to go to (41, 17) via:
+[(79, 31)]
+WARNING:root:ant at (83, 58) is going to go to (41, 17) via:
+[(84, 58)]
+WARNING:root:move order issued: ant at (83, 58) going s to reach (84, 58)
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (78, 33) is going to go to (41, 17) via:
+[(79, 33)]
+WARNING:root:started finding (41, 17) from (36, 20)
+WARNING:root:ant at (36, 20) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (39, 27), (39, 28), (38, 28), (37, 28), (37, 27), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23), (36, 22), (36, 21)]
+WARNING:root:move order issued: ant at (36, 20) going e to reach (36, 21)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:ant at (84, 58) is going to go to (41, 17) via:
+[(85, 58)]
+WARNING:root:move order issued: ant at (84, 58) going s to reach (85, 58)
+WARNING:root:ant at (78, 31) is going to go to (41, 17) via:
+[(79, 31)]
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (78, 33) is going to go to (41, 17) via:
+[(79, 33)]
+WARNING:root:started finding (41, 17) from (36, 21)
+WARNING:root:ant at (36, 21) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (39, 27), (39, 28), (39, 29), (38, 29), (37, 29), (37, 28), (37, 27), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23), (36, 22)]
+WARNING:root:move order issued: ant at (36, 21) going e to reach (36, 22)
+WARNING:root:ant at (85, 58) is going to go to (41, 17) via:
+[(86, 58)]
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (78, 33) is going to go to (41, 17) via:
+[(79, 33)]
+WARNING:root:ant at (78, 31) is going to go to (41, 17) via:
+[(79, 31)]
+WARNING:root:started finding (41, 17) from (36, 22)
+WARNING:root:ant at (36, 22) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (39, 29), (39, 30), (38, 30), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (36, 22) going e to reach (36, 23)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:started finding (81, 34) from (78, 31)
+WARNING:root:ant at (78, 31) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (81, 40), (81, 41), (80, 41), (79, 41), (78, 41), (78, 40), (78, 39), (78, 38), (78, 37), (78, 36), (78, 35), (78, 34), (78, 33), (78, 32)]
+WARNING:root:move order issued: ant at (78, 31) going e to reach (78, 32)
+WARNING:root:started finding (81, 34) from (78, 33)
+WARNING:root:ant at (78, 33) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (81, 40), (81, 41), (80, 41), (79, 41), (78, 41), (78, 40), (78, 39), (78, 38), (78, 37), (78, 36), (78, 35), (78, 34)]
+WARNING:root:move order issued: ant at (78, 33) going e to reach (78, 34)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (78, 32)
+WARNING:root:ant at (78, 32) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (81, 40), (81, 41), (81, 42), (80, 42), (79, 42), (79, 41), (78, 41), (78, 40), (78, 39), (78, 38), (78, 37), (78, 36), (78, 35), (78, 34), (78, 33)]
+WARNING:root:move order issued: ant at (78, 32) going e to reach (78, 33)
+WARNING:root:started finding (81, 34) from (78, 34)
+WARNING:root:ant at (78, 34) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (81, 40), (81, 41), (81, 42), (80, 42), (79, 42), (79, 41), (78, 41), (78, 40), (78, 39), (78, 38), (78, 37), (78, 36), (78, 35)]
+WARNING:root:move order issued: ant at (78, 34) going e to reach (78, 35)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (78, 35)
+WARNING:root:ant at (78, 35) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (81, 40), (81, 41), (81, 42), (81, 43), (80, 43), (79, 43), (79, 42), (79, 41), (78, 41), (78, 40), (78, 39), (78, 38), (78, 37), (78, 36)]
+WARNING:root:move order issued: ant at (78, 35) going e to reach (78, 36)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (78, 33)
+WARNING:root:ant at (78, 33) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (81, 40), (81, 41), (81, 42), (81, 43), (80, 43), (79, 43), (79, 42), (79, 41), (78, 41), (78, 40), (78, 39), (78, 38), (78, 37), (78, 36), (78, 35), (78, 34)]
+WARNING:root:move order issued: ant at (78, 33) going e to reach (78, 34)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (78, 36)
+WARNING:root:ant at (78, 36) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (81, 40), (81, 41), (81, 42), (81, 43), (81, 44), (80, 44), (79, 44), (78, 44), (77, 44), (77, 43), (77, 42), (77, 41), (77, 40), (77, 39), (77, 38), (77, 37), (78, 37)]
+WARNING:root:move order issued: ant at (78, 36) going e to reach (78, 37)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (78, 34)
+WARNING:root:ant at (78, 34) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (81, 40), (81, 41), (81, 42), (81, 43), (81, 44), (80, 44), (79, 44), (78, 44), (77, 44), (77, 43), (77, 42), (77, 41), (77, 40), (77, 39), (77, 38), (77, 37), (78, 37), (78, 36), (78, 35)]
+WARNING:root:move order issued: ant at (78, 34) going e to reach (78, 35)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (78, 35)
+WARNING:root:ant at (78, 35) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (81, 40), (81, 41), (81, 42), (81, 43), (81, 44), (81, 45), (80, 45), (79, 45), (78, 45), (77, 45), (76, 45), (75, 45), (75, 44), (74, 44), (74, 43), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39), (76, 39), (76, 38), (77, 38), (77, 37), (78, 37), (78, 36)]
+WARNING:root:move order issued: ant at (78, 35) going e to reach (78, 36)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (78, 37)
+WARNING:root:ant at (78, 37) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (81, 40), (81, 41), (81, 42), (81, 43), (81, 44), (81, 45), (80, 45), (79, 45), (78, 45), (77, 45), (76, 45), (75, 45), (75, 44), (74, 44), (74, 43), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39), (76, 39), (76, 38), (77, 38), (77, 37)]
+WARNING:root:move order issued: ant at (78, 37) going n to reach (77, 37)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (78, 36)
+WARNING:root:ant at (78, 36) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (81, 40), (81, 41), (81, 42), (81, 43), (81, 44), (81, 45), (80, 45), (79, 45), (78, 45), (77, 45), (76, 45), (75, 45), (74, 45), (74, 44), (74, 43), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39), (76, 39), (76, 38), (77, 38), (77, 37), (78, 37)]
+WARNING:root:move order issued: ant at (78, 36) going e to reach (78, 37)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (77, 37)
+WARNING:root:ant at (77, 37) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (81, 40), (81, 41), (81, 42), (81, 43), (81, 44), (81, 45), (80, 45), (79, 45), (78, 45), (77, 45), (76, 45), (75, 45), (74, 45), (74, 44), (74, 43), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39), (76, 39), (76, 38), (77, 38)]
+WARNING:root:move order issued: ant at (77, 37) going e to reach (77, 38)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (77, 38)
+WARNING:root:ant at (77, 38) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (80, 45), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (75, 46), (74, 46), (74, 45), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39), (76, 39), (76, 38)]
+WARNING:root:move order issued: ant at (77, 38) going n to reach (76, 38)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (78, 37)
+WARNING:root:ant at (78, 37) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (80, 45), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (75, 46), (74, 46), (74, 45), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39), (76, 39), (76, 38), (77, 38), (77, 37)]
+WARNING:root:move order issued: ant at (78, 37) going n to reach (77, 37)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (76, 38)
+WARNING:root:ant at (76, 38) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (80, 45), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (75, 46), (74, 46), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39), (76, 39)]
+WARNING:root:move order issued: ant at (76, 38) going e to reach (76, 39)
+WARNING:root:started finding (81, 34) from (77, 37)
+WARNING:root:ant at (77, 37) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (80, 45), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (75, 46), (74, 46), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39), (76, 39), (76, 38), (77, 38)]
+WARNING:root:move order issued: ant at (77, 37) going e to reach (77, 38)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (77, 38)
+WARNING:root:ant at (77, 38) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (74, 47), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39), (76, 39), (76, 38)]
+WARNING:root:move order issued: ant at (77, 38) going n to reach (76, 38)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (74, 47), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 39)
+WARNING:root:ant at (75, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (74, 47), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40)]
+WARNING:root:move order issued: ant at (75, 39) going e to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (76, 38)
+WARNING:root:ant at (76, 38) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (74, 47), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39), (76, 39)]
+WARNING:root:move order issued: ant at (76, 38) going e to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:ant at (104, 21) is going to go to (81, 34) via:
+[(105, 21)]
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (104, 21) is going to go to (41, 17) via:
+[(105, 21)]
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:started finding (110, 18) from (104, 21)
+WARNING:root:ant at (104, 21) is going to go to (110, 18) via:
+[(110, 17), (110, 16), (110, 15), (109, 15), (108, 15), (107, 15), (107, 16), (107, 17), (107, 18), (106, 18), (105, 18), (105, 19), (104, 19), (103, 19), (103, 20), (103, 21)]
+WARNING:root:move order issued: ant at (104, 21) going n to reach (103, 21)
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (103, 21) is going to go to (41, 17) via:
+[(104, 21)]
+WARNING:root:move order issued: ant at (103, 21) going s to reach (104, 21)
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:started finding (110, 18) from (104, 21)
+WARNING:root:ant at (104, 21) is going to go to (110, 18) via:
+[(110, 17), (110, 16), (110, 15), (109, 15), (108, 15), (107, 15), (107, 16), (107, 17), (107, 18), (106, 18), (105, 18), (105, 19), (104, 19), (103, 19), (103, 20), (103, 21)]
+WARNING:root:move order issued: ant at (104, 21) going n to reach (103, 21)
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (103, 21) is going to go to (41, 17) via:
+[(104, 21)]
+WARNING:root:move order issued: ant at (103, 21) going s to reach (104, 21)
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:started finding (110, 18) from (104, 21)
+WARNING:root:ant at (104, 21) is going to go to (110, 18) via:
+[(110, 17), (110, 16), (110, 15), (109, 15), (108, 15), (107, 15), (107, 16), (107, 17), (107, 18), (106, 18), (105, 18), (105, 19), (104, 19), (103, 19), (103, 20), (103, 21)]
+WARNING:root:move order issued: ant at (104, 21) going n to reach (103, 21)
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (103, 21) is going to go to (41, 17) via:
+[(104, 21)]
+WARNING:root:move order issued: ant at (103, 21) going s to reach (104, 21)
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:started finding (110, 18) from (104, 21)
+WARNING:root:ant at (104, 21) is going to go to (110, 18) via:
+[(110, 17), (110, 16), (110, 15), (109, 15), (108, 15), (107, 15), (107, 16), (107, 17), (107, 18), (106, 18), (105, 18), (105, 19), (104, 19), (103, 19), (103, 20), (103, 21)]
+WARNING:root:move order issued: ant at (104, 21) going n to reach (103, 21)
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (103, 21) is going to go to (41, 17) via:
+[(104, 21)]
+WARNING:root:move order issued: ant at (103, 21) going s to reach (104, 21)
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:started finding (110, 18) from (104, 21)
+WARNING:root:ant at (104, 21) is going to go to (110, 18) via:
+[(110, 17), (110, 16), (110, 15), (109, 15), (108, 15), (107, 15), (107, 16), (107, 17), (107, 18), (106, 18), (105, 18), (105, 19), (104, 19), (103, 19), (103, 20), (103, 21)]
+WARNING:root:move order issued: ant at (104, 21) going n to reach (103, 21)
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (103, 21) is going to go to (41, 17) via:
+[(104, 21)]
+WARNING:root:move order issued: ant at (103, 21) going s to reach (104, 21)
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:started finding (110, 18) from (104, 21)
+WARNING:root:ant at (104, 21) is going to go to (110, 18) via:
+[(110, 17), (110, 16), (110, 15), (109, 15), (108, 15), (107, 15), (107, 16), (107, 17), (107, 18), (106, 18), (105, 18), (105, 19), (104, 19), (103, 19), (103, 20), (103, 21)]
+WARNING:root:move order issued: ant at (104, 21) going n to reach (103, 21)
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (103, 21) is going to go to (41, 17) via:
+[(104, 21)]
+WARNING:root:move order issued: ant at (103, 21) going s to reach (104, 21)
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:started finding (110, 18) from (104, 21)
+WARNING:root:ant at (104, 21) is going to go to (110, 18) via:
+[(110, 17), (110, 16), (110, 15), (109, 15), (108, 15), (107, 15), (107, 16), (107, 17), (107, 18), (106, 18), (105, 18), (105, 19), (104, 19), (103, 19), (103, 20), (103, 21)]
+WARNING:root:move order issued: ant at (104, 21) going n to reach (103, 21)
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (103, 21) is going to go to (41, 17) via:
+[(104, 21)]
+WARNING:root:move order issued: ant at (103, 21) going s to reach (104, 21)
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:started finding (110, 18) from (104, 21)
+WARNING:root:ant at (104, 21) is going to go to (110, 18) via:
+[(110, 17), (110, 16), (110, 15), (109, 15), (108, 15), (107, 15), (107, 16), (107, 17), (107, 18), (106, 18), (105, 18), (105, 19), (104, 19), (103, 19), (103, 20), (103, 21)]
+WARNING:root:move order issued: ant at (104, 21) going n to reach (103, 21)
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (103, 21) is going to go to (41, 17) via:
+[(104, 21)]
+WARNING:root:move order issued: ant at (103, 21) going s to reach (104, 21)
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:started finding (110, 18) from (104, 21)
+WARNING:root:ant at (104, 21) is going to go to (110, 18) via:
+[(110, 17), (110, 16), (110, 15), (109, 15), (108, 15), (107, 15), (107, 16), (107, 17), (107, 18), (106, 18), (105, 18), (105, 19), (104, 19), (103, 19), (103, 20), (103, 21)]
+WARNING:root:move order issued: ant at (104, 21) going n to reach (103, 21)
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (103, 21) is going to go to (41, 17) via:
+[(104, 21)]
+WARNING:root:move order issued: ant at (103, 21) going s to reach (104, 21)
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:started finding (110, 18) from (104, 21)
+WARNING:root:ant at (104, 21) is going to go to (110, 18) via:
+[(110, 17), (110, 16), (110, 15), (109, 15), (108, 15), (107, 15), (107, 16), (107, 17), (107, 18), (106, 18), (105, 18), (105, 19), (104, 19), (103, 19), (103, 20), (103, 21)]
+WARNING:root:move order issued: ant at (104, 21) going n to reach (103, 21)
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (103, 21) is going to go to (41, 17) via:
+[(104, 21)]
+WARNING:root:move order issued: ant at (103, 21) going s to reach (104, 21)
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:started finding (110, 18) from (104, 21)
+WARNING:root:ant at (104, 21) is going to go to (110, 18) via:
+[(110, 17), (110, 16), (110, 15), (109, 15), (108, 15), (107, 15), (107, 16), (107, 17), (107, 18), (106, 18), (105, 18), (105, 19), (104, 19), (103, 19), (103, 20), (103, 21)]
+WARNING:root:move order issued: ant at (104, 21) going n to reach (103, 21)
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (103, 21) is going to go to (41, 17) via:
+[(104, 21)]
+WARNING:root:move order issued: ant at (103, 21) going s to reach (104, 21)
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:started finding (110, 18) from (104, 21)
+WARNING:root:ant at (104, 21) is going to go to (110, 18) via:
+[(110, 17), (110, 16), (110, 15), (109, 15), (108, 15), (107, 15), (107, 16), (107, 17), (107, 18), (106, 18), (105, 18), (105, 19), (104, 19), (103, 19), (103, 20), (103, 21)]
+WARNING:root:move order issued: ant at (104, 21) going n to reach (103, 21)
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (103, 21) is going to go to (41, 17) via:
+[(104, 21)]
+WARNING:root:move order issued: ant at (103, 21) going s to reach (104, 21)
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:started finding (110, 18) from (104, 21)
+WARNING:root:ant at (104, 21) is going to go to (110, 18) via:
+[(110, 17), (110, 16), (110, 15), (109, 15), (108, 15), (107, 15), (107, 16), (107, 17), (107, 18), (106, 18), (105, 18), (105, 19), (104, 19), (103, 19), (103, 20), (103, 21)]
+WARNING:root:move order issued: ant at (104, 21) going n to reach (103, 21)
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (103, 21) is going to go to (41, 17) via:
+[(104, 21)]
+WARNING:root:move order issued: ant at (103, 21) going s to reach (104, 21)
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:started finding (110, 18) from (104, 21)
+WARNING:root:ant at (104, 21) is going to go to (110, 18) via:
+[(110, 17), (110, 16), (110, 15), (109, 15), (108, 15), (107, 15), (107, 16), (107, 17), (107, 18), (106, 18), (105, 18), (105, 19), (104, 19), (103, 19), (103, 20), (103, 21)]
+WARNING:root:move order issued: ant at (104, 21) going n to reach (103, 21)
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (103, 21) is going to go to (41, 17) via:
+[(104, 21)]
+WARNING:root:move order issued: ant at (103, 21) going s to reach (104, 21)
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:started finding (110, 18) from (104, 21)
+WARNING:root:ant at (104, 21) is going to go to (110, 18) via:
+[(110, 17), (110, 16), (110, 15), (109, 15), (108, 15), (107, 15), (107, 16), (107, 17), (107, 18), (106, 18), (105, 18), (105, 19), (104, 19), (103, 19), (103, 20), (103, 21)]
+WARNING:root:move order issued: ant at (104, 21) going n to reach (103, 21)
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (103, 21) is going to go to (41, 17) via:
+[(104, 21)]
+WARNING:root:move order issued: ant at (103, 21) going s to reach (104, 21)
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:started finding (110, 18) from (104, 21)
+WARNING:root:ant at (104, 21) is going to go to (110, 18) via:
+[(110, 17), (110, 16), (110, 15), (109, 15), (108, 15), (107, 15), (107, 16), (107, 17), (107, 18), (106, 18), (105, 18), (105, 19), (104, 19), (103, 19), (103, 20), (103, 21)]
+WARNING:root:move order issued: ant at (104, 21) going n to reach (103, 21)
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (103, 21) is going to go to (41, 17) via:
+[(104, 21)]
+WARNING:root:move order issued: ant at (103, 21) going s to reach (104, 21)
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:started finding (110, 18) from (104, 21)
+WARNING:root:ant at (104, 21) is going to go to (110, 18) via:
+[(110, 17), (110, 16), (110, 15), (109, 15), (108, 15), (107, 15), (107, 16), (107, 17), (107, 18), (106, 18), (105, 18), (105, 19), (104, 19), (103, 19), (103, 20), (103, 21)]
+WARNING:root:move order issued: ant at (104, 21) going n to reach (103, 21)
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (103, 21) is going to go to (41, 17) via:
+[(104, 21)]
+WARNING:root:move order issued: ant at (103, 21) going s to reach (104, 21)
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
+WARNING:root:started finding (81, 34) from (75, 40)
+WARNING:root:ant at (75, 40) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40)]
+WARNING:root:move order issued: ant at (75, 40) going n to reach (74, 40)
+WARNING:root:ant at (36, 23) is going to go to (81, 34) via:
+[(37, 23)]
+WARNING:root:move order issued: ant at (36, 23) going s to reach (37, 23)
+WARNING:root:started finding (110, 18) from (104, 21)
+WARNING:root:ant at (104, 21) is going to go to (110, 18) via:
+[(110, 17), (110, 16), (110, 15), (109, 15), (108, 15), (107, 15), (107, 16), (107, 17), (107, 18), (106, 18), (105, 18), (105, 19), (104, 19), (103, 19), (103, 20), (103, 21)]
+WARNING:root:move order issued: ant at (104, 21) going n to reach (103, 21)
+WARNING:root:started finding (81, 34) from (76, 39)
+WARNING:root:ant at (76, 39) is going to go to (81, 34) via:
+[(81, 35), (82, 35), (82, 36), (82, 37), (82, 38), (82, 39), (82, 40), (82, 41), (82, 42), (82, 43), (82, 44), (82, 45), (81, 45), (81, 46), (80, 46), (79, 46), (78, 46), (77, 46), (76, 46), (76, 47), (75, 47), (75, 48), (74, 48), (73, 48), (73, 47), (73, 46), (73, 45), (73, 44), (72, 44), (72, 43), (72, 42), (73, 42), (74, 42), (74, 41), (74, 40), (75, 40), (75, 39)]
+WARNING:root:move order issued: ant at (76, 39) going n to reach (75, 39)
+WARNING:root:ant at (42, 130) is going to go to (81, 34) via:
+[(43, 130)]
+WARNING:root:ant at (103, 21) is going to go to (41, 17) via:
+[(104, 21)]
+WARNING:root:move order issued: ant at (103, 21) going s to reach (104, 21)
+WARNING:root:ant at (74, 40) is going to go to (42, 28) via:
+[(75, 40)]
+WARNING:root:move order issued: ant at (74, 40) going s to reach (75, 40)
+WARNING:root:started finding (41, 17) from (37, 23)
+WARNING:root:ant at (37, 23) is going to go to (41, 17) via:
+[(41, 18), (40, 18), (40, 19), (40, 20), (40, 21), (40, 22), (40, 23), (40, 24), (40, 25), (40, 26), (40, 27), (40, 28), (40, 29), (40, 30), (39, 30), (39, 31), (38, 31), (37, 31), (37, 30), (36, 30), (36, 29), (36, 28), (36, 27), (36, 26), (36, 25), (36, 24), (36, 23)]
+WARNING:root:move order issued: ant at (37, 23) going n to reach (36, 23)
+WARNING:root:ant at (75, 39) is going to go to (42, 28) via:
+[(76, 39)]
+WARNING:root:move order issued: ant at (75, 39) going s to reach (76, 39)
+WARNING:root:ant at (42, 130) is going to go to (41, 17) via:
+[(43, 130)]
