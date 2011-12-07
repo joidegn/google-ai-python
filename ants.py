@@ -178,9 +178,12 @@ class Ants():
       for row in (-1,0,1):
         for column in (-1,0,1):
           if not (row+column) % 2 == 0:
-            if self.passable((loc[0]+row, loc[1]+column)):
+            if self.isloc((loc[0]+row, loc[1]+column)) and self.passable((loc[0]+row, loc[1]+column)):
               neighbors.append((loc[0]+row, loc[1]+column))
       return neighbors
+
+    def isloc(self, loc): # checks if loc has the right format
+      return len(loc) == 2 and 0 < loc[0] < self.rows and 0 < loc[1] < self.rows
 
     def unoccupied(self, loc):
         'true if no ants are at the location'
